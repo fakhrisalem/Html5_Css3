@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2&3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 100px;
+            background-color: #000000;
+        }
+        .curved-div {
+            border: 5px solid #e90a0a;
+            border-radius: 25px;
+            padding: 20px;
+            background-color: #fff;
+        }
+       
+        p.custom-font {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+        }
+        .column-paragraph {
+            column-count: 2;
+            column-gap: 20px;
+        }
+.vertical-name {
+            color: #fdfbfb;
+    writing-mode: vertical-rl; 
+    height: 100vh;
+    font-size: 50px;
+    font-weight: bold;
+    transform: translateY(-50%);
+    position: fixed; 
+    top: 50%;
+    right: 0; 
+    margin-right: 2px; 
+    text-align: center; 
+}
+        .hover-image {
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            width: 200px;
+            height: 200px;
+        }
+
+        .hover-image:hover {
+            transform: rotate(360deg);
+            width: 300px;
+            height: 300px;
+        }
+
+        @keyframes rotateAndMove {
+            0% {
+                transform: rotate(0deg) translateX(0);
+                width: 300px;
+                height: 300px;
+            }
+            50% {
+                transform: rotate(360deg) translateX(50vw);
+                width: 150px;
+                height: 150px;
+            }
+            100% {
+                transform: rotate(720deg) translateX(0);
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .animated-image {
+            animation: rotateAndMove 4s infinite;
+            width: 100px;
+            height: 100px;
+        }
+        .tiger {
+            position: relative;
+            left: 0;
+            transition: transform 0.5s ease;
+        }
+
+        .tiger:hover {
+            transform: translateX(50vw) rotateY(180deg);
+        }
+
+        @keyframes tigerAnimation {
+            0% {
+                transform: translateX(0) rotateY(0deg);
+            }
+            50% {
+                transform: translateX(50vw) rotateY(180deg);
+            }
+            100% {
+                transform: translateX(0) rotateY(0deg);
+            }
+        }
+
+        .tiger-animation {
+            animation: tigerAnimation 4s infinite;
+            position: relative;
+        }
+        .hr{
+            color: rgb(255, 55, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="curved-div">
+        <h2>  Egypt</h2>
+        <p class="custom-font ">
+          Egypt, known as the land of the Pharaohs, is a country located in northeastern Africa and is considered one of the oldest civilizations in the world. It is distinguished by its rich history that extends back thousands of years, as it established the great civilization of the Pharaohs that left us with amazing monuments such as the pyramids and the Sphinx. Its capital is Cairo, a vibrant city that combines modernity and history.
+            
+            </p>
+        <p class="column-paragraph">
+            Egypt is considered an important cultural and religious center, as it contains many wonderful tourist attractions such as the Karnak Temple in Luxor and the city of Alexandria. The official language is Arabic, and the main religion is Islam, which contributes to the formation of a rich and diverse culture.
+            
+            Egypt faces many challenges, including economic and social issues, but it continues to strive for development and growth. Thanks to its geographical location and economic strategy, Egypt plays a pivotal role in the Middle East and North Africa region.
+        </p>
+    </div>
+
+    <div class="vertical-name">Mona Fakhri Salem</div>
+<div>
+    <img src="welcome.jpg" alt="Animated Image" class="animated-image" />
+    <img src="heart.jpg" alt="Hover Image" class="hover-image" />
+    <img src="pyramids.jpg" alt="Hover Image" class="hover-image" />
+    <img src="felucca.jpg" alt="Hover Image" class="hover-image" />
+    <img src="landscape.jpg" alt="Hover Image" class="hover-image" />
+    <img src="underwater.jpg" alt="Hover Image" class="hover-image" />
+  
+</div><hr><hr>
+    
+    <img src="tiger.gif" alt="Tiger" class="tiger" />
+    
+    <img src="tiger.gif" alt="Tiger Animation" class="tiger-animation" />
+</body>
+</html>
